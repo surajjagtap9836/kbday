@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Secret Chats🔐</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+    padding:40px;
+}
+
+/* MAIN CARD */
+
+.birthday-card{
+    width:1200px;
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* GRADIENT BORDER */
+
+.birthday-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    padding:8px;
+    border-radius:30px;
+
+    background:linear-gradient(
+        45deg,
+        #ff0080,
+        #ff8c00,
+        #ffd700,
+        #00c9ff,
+        #7b2ff7
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+    mask-composite:exclude;
+    pointer-events:none;
+}
+
+/* TITLE */
+
+h1{
+    text-align:center;
+    color:#ff1493;
+    font-size:60px;
+    margin-bottom:15px;
+    font-family:cursive;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:40px;
+    letter-spacing:2px;
+}
+
+/* PHOTO GRID */
+
+.photo-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+/* PHOTO BOX */
+
+.photo-box{
+    background:#fff0f6;
+    padding:20px;
+    border-radius:25px;
+    text-align:center;
+    transition:0.5s;
+    border:4px dashed #ff69b4;
+    position:relative;
+    overflow:hidden;
+}
+
+/* HOVER */
+
+.photo-box:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* BIG IMAGE */
+
+.photo-box img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    border:6px solid white;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:0.5s;
+}
+
+/* IMAGE ZOOM */
+
+.photo-box:hover img{
+    transform:scale(1.05);
+}
+
+/* CAPTION */
+
+.caption{
+    margin-top:18px;
+}
+
+.caption h2{
+    color:#d63384;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.caption p{
+    color:#666;
+    font-size:15px;
+    line-height:1.5;
+}
+
+/* HEART ICON */
+
+.hearts{
+    position:absolute;
+    top:15px;
+    right:25px;
+    font-size:40px;
+    animation:float 2s infinite alternate;
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(10px);
+    }
+
+}
+
+/* FOOTER */
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#d63384;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:42px;
+    }
+
+    .birthday-card{
+        padding:20px;
+    }
+
+    .photo-box img{
+        height:320px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="birthday-card">
+
+    <!-- FLOATING ICON -->
+
+    <div class="hearts">🎂💖✨</div>
+
+    <!-- TITLE -->
+
+    <h1>Happy Birthday ❤️</h1>
+
+    <div class="subtitle">
+        OUR BEAUTIFUL MEMORIES TOGETHER
+    </div>
+
+    <!-- PHOTOS -->
+
+    <div class="photo-container">
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo-box">
+
+            <img src="./p1.png" alt="">
+
+            <div class="caption">
+
+                <h2>Beautiful Memories</h2>
+
+                <p>
+                    Every moment with you feels magical
+                    and full of happiness.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo-box">
+
+            <img src="./p2.png" alt="">
+
+            <div class="caption">
+
+                <h2>Special Moments</h2>
+
+                <p>
+                    Thank you for making life more
+                    beautiful every day.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo-box">
+
+            <img src="./p3.png" alt="">
+
+            <div class="caption">
+
+                <h2>Forever Together</h2>
+
+                <p>
+                    You are my favorite person
+                    forever and always ❤️
+                </p>
+
+            </div>
+
+        </div>
+        <!-- PHOTO 4 -->
+
+<div class="photo-box">
+
+    <img src="./p4.png" alt="">
+
+    <div class="caption">
+
+        <h2>My Happiness 💖</h2>
+
+        <p>
+            Your smile is the reason behind
+            my happiest days.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- PHOTO 5 -->
+
+<div class="photo-box">
+
+    <img src="./p5.png" alt="">
+
+    <div class="caption">
+
+        <h2>Sweetest Person ✨</h2>
+
+        <p>
+            Every little moment with you
+            becomes a beautiful memory.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- PHOTO 6 -->
+
+<div class="photo-box">
+
+    <img src="./p6.png" alt="">
+
+    <div class="caption">
+
+        <h2>Endless Love ❤️</h2>
+
+        <p>
+            No matter what happens,
+            I will always choose you.
+        </p>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        Made With Love 💕
+    </div>
+
+</div>
+
+</body>
+</html>

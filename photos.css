@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.img{
+height: 300px;
+width: 330px;
+border-left: 10px;
+border-right: 10px;
+border-radius: 10px;
+}
+.parent{
+display: flex;
+
+}
+
+.child{
+height: 550px;
+width: 330px;
+border: 2px solid black;
+padding: 10px;
+border-radius: 10px;
+margin:15px;
+
+}
+.bold{
+font-size: 25px;
+}
+
+.submit{
+padding: 15px;
+border-radius: 50px;
+margin-left: 70px;
+margin-top: 10px;
+background-color: black;
+color: aliceblue;
+font-size: 15px;
+}
